@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="description" content="Un monde de luxe et de nouvelles découvertes vous attend au Nice ONE Resort & Spa. Alliant élégance intemporelle et design de style français avec en toile de fond la plage de Nice et ses environs, nous fournissons l'évasion côtière parfaite pour la romance et l'aventure. Notre service de classe mondiale, notre confort indulgent et nos expériences écologiques nous distinguent vraiment des hôtels de Nice.">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/output/{{css}}.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" media="print" href="css/output/print.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/blockFormSubmitRefresh.js" defer></script>
+    <script src="js/JsGeneral.js" defer></script>
+    <!-- <script src="js/script.js" defer></script> -->
+    <script src="js/{{script}}.js" defer></script>
+    <script src="https://kit.fontawesome.com/18ee91faff.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/leemark/embed360/20dac87eea4d7fc0f8a368519fc6c3b3a208f492/embed360.js"></script>
+
+  </head>
+  <body>
+    
+    <header>
+      <div>
+        <a href="index.php?lang={{lang}}">
+          <img class="logo" src="images/logoPng.png" alt="Logo">
+        </a>
+
+        <!-- icones des langues -->
+        <p>
+          {% for langue in langues %}
+          <span class='iconeLangue'><a href='?lang={{langue.idLangue}}'><img src='{{langue.iconeLangue}}' alt='{{langue.valeurLangue }}'></a></span>
+          {% endfor %}
+        </p>
+
+        <div>
+          <a href="profile.php?lang={{lang}}"><i class="fa-solid fa-user"></i></a>
+          <a class="profil" href="profile.php?lang={{lang}}">{{profil}}</a>
+        </div>
+
+
+
+      </div>
+
+      <!-- Menu de navigation -->
+
+      <nav>
+        <input id="menu__toggle" type="checkbox" />
+        <label for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul>
+          <!-- <div id="toggleLeft"><i class="fa-solid fa-chevron-left"></i></div> -->
+            <li><a href="room.php?lang={{lang}}">{{nav1}}</a></li>
+            <li><a href="restaurant.php?lang={{lang}}">{{nav2}}</a></li>
+            <li><a href="event.php?lang={{lang}}">{{nav3}}</a></li>
+            <li><a href="commentaire.php?lang={{lang}}">{{nav4}}</a></li>
+            <li><a href="contact.php?lang={{lang}}">{{nav5}}</a></li>
+            <li><a class="connexion" href="connexion.php?lang={{lang}}">{{connection}}</a></li>
+          <!-- <div id="toggleRight"><i class="fa-solid fa-chevron-right"></i></div> -->
+        </ul>
+
+      </nav>
+
+    </header>
+
+    {% block contenu %}
+  	{% endblock %}
+
+      <footer>
+        <ul>
+          <li><a href="mentionLegales.php">{{Mentions}}</a></li>
+          <li><a href="politiqueConfidentialite.php">{{politic}}</a></li>
+          <li><a href="conditionVente.php">{{condition}}</a></li>
+        </ul>
+        <div>
+          <ul>
+            <li><span>{{adress}}: </span> Campus Carlone - 06200, Nice</li>
+            <li><span>Mail: </span> info@niceone.com</li>
+            <li><span>Tel: </span> +33 6 00 00 00 00</li>
+          </ul>
+          <ul>
+              <li><a href=""><span class="carre"><i class="fab fa-facebook"></i></span></a></li>
+              <li><a href=""><span class="carre"><i class="fab fa-instagram"></i></span></a></li>
+              <li><a href=""><span class="carre"><i class="fab fa-twitter"></i></span></a></li>
+              <li><a href=""><span class="carre"><i class="fab fa-linkedin-in"></i></span></a></li>
+          </ul>
+        </div>
+
+      </footer>
+  </body>
+</html>
