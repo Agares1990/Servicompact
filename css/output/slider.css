@@ -1,0 +1,72 @@
+/* line 1, ../css/input/slider.scss */
+.slideEventImg {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* line 8, ../css/input/slider.scss */
+.slideEventImg img {
+  position: absolute;
+  transition: 1s;
+  opacity: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* line 15, ../css/input/slider.scss */
+.slideEventImg img:first-of-type {
+  z-index: 3;
+}
+
+/* line 16, ../css/input/slider.scss */
+.slideEventImg img:nth-of-type(2) {
+  z-index: 2;
+}
+
+/* line 17, ../css/input/slider.scss */
+.slideEventImg img:last-of-type {
+  z-index: 1;
+}
+
+/* line 18, ../css/input/slider.scss */
+.indicators i {
+  z-index: 4;
+}
+
+/* line 20, ../css/input/slider.scss */
+.activeImg {
+  opacity: 1 !important;
+}
+
+/* line 22, ../css/input/slider.scss */
+.slideEventImg i {
+  position: absolute;
+  cursor: pointer;
+  background: #78ADC9;
+  opacity: .6;
+  transition: .4s;
+  color: #fff;
+  padding: 0 10px;
+}
+
+/* line 32, ../css/input/slider.scss */
+.slideEventImg i:first-of-type {
+  top: 50%;
+  left: 1%;
+}
+
+/* line 33, ../css/input/slider.scss */
+.slideEventImg i:last-of-type {
+  top: 50%;
+  right: 1%;
+}
+
+/* line 34, ../css/input/slider.scss */
+.slideEventImg i:hover {
+  opacity: .9;
+}
+
+/*# sourceMappingURL=slider.css.map */
