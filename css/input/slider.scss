@@ -1,34 +1,112 @@
-.slideEventImg{position: relative;
-  height: 90vh;
-  overflow: hidden;
-  width:100%;
-  margin:20px auto}
-
-
-.slideEventImg img{position: absolute
-  ;transition: 1s;
-  opacity: 0;
-  width:100%;
-  border-radius:10px}
-
-
-.slideEventImg img:first-of-type{z-index: 3;}
-.slideEventImg img:nth-of-type(2){z-index: 2;}
-.slideEventImg img:last-of-type{z-index: 1;}
-.indicators i{z-index: 4;}
-
-.activeImg{opacity: 1!important;}
-
-.slideEventImg i{position: absolute;
-  cursor: pointer;
-  background: #78ADC9;
-  opacity: .6;
-  transition: .4s;
-  color:#fff;
-  padding:0 10px;
+.owl-carousel {
+    width: 100%;
+    height: 80vh;
+    margin-top: 8rem;
 }
 
+.slide {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
-.slideEventImg i:first-of-type{top:50%;left: 1%}
-.slideEventImg i:last-of-type{top:50%;right: 1%}
-.slideEventImg i:hover{opacity: .9}
+// background pour les slides : effet
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-1 {
+    background-image: url(../../images/slide1.jpg);
+}
+
+.slide-2 {
+    background-image: url(../../images/slide2.jpg);
+}
+
+.slide-3 {
+    background-image: url(../../images/slide3.jpg);
+}
+
+.slide-content {
+  width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #fff;
+    //padding: 0 20%;
+}
+
+.slide-content h1 {
+    font-family: "Anton", serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.slide-content p {
+    font-family: "Lato", serif;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.slide-content button {
+    font-family: "Roboto", serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border: none;
+}
+
+.owl-dots {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 1%;
+}
+
+/* petites circles de changement de slide */
+.owl-dots span {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.owl-dots button {
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-nav button {
+    border: none !important;
+    outline: none !important;
+}
+
+/* les flèches */
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff !important;
+    font-size: 4em !important;
+    opacity: .8;
+    font-weight: bolder !important;
+    background:none !important;
+}
+
+.owl-prev {
+    left: 1%;
+}
+
+.owl-next {
+    right: 1%;
+}

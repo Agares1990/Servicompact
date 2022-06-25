@@ -1,19 +1,56 @@
 {% extends "base.html.twig" %}
 {% block contenu %}
-<div class=" slideEventImg">
 
-  <img class="activeImg" src="https://www.onetravel.com/going-places/wp-content/uploads/2017/01/Mother-and-two-children-look-at-the-sea.jpg" alt="">
-
-  <img class="" src="https://i1.wp.com/goingglobaltv.com/wp-content/uploads/Travel-2018.jpg?resize=1000%2C600" alt="">
-
-  <img class="" src="https://i1.wp.com/www.menabytes.com/wp-content/uploads/2017/08/Travel-Websites-MENA.jpg?resize=1000%2C600&ssl=1" alt="">
-  <img class="" src="https://www.cheapoair.com/miles-away/wp-content/uploads/2017/01/make-money-while-you-travel-.jpg" alt="">
-
-
-  <div class="indicators">
-    <i class="fa fa-angle-left fa-3x text-"></i>
-    <i class="fa fa-angle-right fa-3x"></i>
+<!-- Sliders -->
+<section class="owl-carousel owl-theme">
+  <div class="slide slide-1">
+      <div class="slide-content">
+          <h1>Un réseau de milliers de professionnels dans plusieurs métiers :</h1>
+          <p>Nettoyage, Gardiennage, Nuisible, Brancardage..</p>
+          <button>Découvrez nos préstations</button>
+      </div>
   </div>
+  <div class="slide slide-2">
+      <div class="slide-content">
+          <h1>Nous intervenons partout pour vos besoins de services d'entretien</h1>
+          <p>Interventions régulières ou ponctuelles</p>
+          <button>Adoptez nos solutions de nettoyage</button>
+      </div>
+  </div>
+  <div class="slide slide-3">
+      <div class="slide-content">
+          <h1>Nettoyage industriel de confiance</h1>
+          <p>Créez un environnement de travail propre et sain adapté à vos besoins.</p>
+          <button>Demander un devis</button>
+      </div>
+  </div>
+</section>
 
-</div><!-- slideEventImg -->
+
+<section>
+  <h2>Nos préstations</h2>
+  <div class="wrapper">
+    <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+      <div class="info">
+        <h1>Mountain</h1>
+        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+        <button>Read More</button>
+      </div>
+    </div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+      <div class="info">
+        <h1>Road</h1>
+        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+        <button>Read More</button>
+      </div>
+    </div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&amp;fit=crop&amp;w=311&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+      <div class="info">
+        <h1>Protester</h1>
+        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}

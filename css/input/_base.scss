@@ -48,10 +48,11 @@ header{
           //margin: 0px;
           line-height: 2.25;
           -webkit-transition: .5s;
-          color: #202020;
+          //color: #202020;
           position: relative;
           letter-spacing: 1px;
           z-index: 0;
+          color: rgb(75, 75, 75);
           &:hover{
             color: $navyBlue;
           }

@@ -56,18 +56,18 @@ header nav ul li a {
   margin: 0px 1.1rem;
   line-height: 2.25;
   -webkit-transition: .5s;
-  color: #202020;
   position: relative;
   letter-spacing: 1px;
   z-index: 0;
+  color: #4b4b4b;
 }
 
-/* line 55, ../css/input/_base.scss */
+/* line 56, ../css/input/_base.scss */
 header nav ul li a:hover {
   color: #021756;
 }
 
-/* line 58, ../css/input/_base.scss */
+/* line 59, ../css/input/_base.scss */
 header nav ul li a:before {
   position: absolute;
   bottom: -3px;
@@ -79,31 +79,31 @@ header nav ul li a:before {
   transition: all 0.35s ease;
 }
 
-/* line 69, ../css/input/_base.scss */
+/* line 70, ../css/input/_base.scss */
 header nav ul li a:hover:before {
   width: 100%;
 }
 
 /* Menu de navigation au scroll */
-/* line 79, ../css/input/_base.scss */
+/* line 80, ../css/input/_base.scss */
 header.scroll {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
   padding: .5rem 1rem 0 1rem;
 }
 
-/* line 83, ../css/input/_base.scss */
+/* line 84, ../css/input/_base.scss */
 header.scroll .logo {
   width: 9rem;
   height: 6.3rem;
 }
 
-/* line 87, ../css/input/_base.scss */
+/* line 88, ../css/input/_base.scss */
 header.scroll nav {
   padding: 0.3rem 0 0 0;
 }
 
-/* line 93, ../css/input/_base.scss */
+/* line 94, ../css/input/_base.scss */
 footer {
   clear: both;
   background-color: black;
@@ -112,33 +112,33 @@ footer {
   justify-content: space-around;
 }
 
-/* line 103, ../css/input/_base.scss */
+/* line 104, ../css/input/_base.scss */
 footer ul {
   margin: 2rem 0;
 }
 
-/* line 105, ../css/input/_base.scss */
+/* line 106, ../css/input/_base.scss */
 footer ul li {
   margin-bottom: 1rem;
 }
 
-/* line 107, ../css/input/_base.scss */
+/* line 108, ../css/input/_base.scss */
 footer ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* line 115, ../css/input/_base.scss */
+/* line 116, ../css/input/_base.scss */
 footer div ul li {
   display: inline-block;
 }
 
-/* line 117, ../css/input/_base.scss */
+/* line 118, ../css/input/_base.scss */
 footer div ul li span {
   color: #021756;
 }
 
-/* line 120, ../css/input/_base.scss */
+/* line 121, ../css/input/_base.scss */
 footer div ul li .carre {
   font-size: 1.4rem;
   padding: .1rem 0.4rem;
@@ -147,7 +147,7 @@ footer div ul li .carre {
   transition: all 500ms ease;
 }
 
-/* line 126, ../css/input/_base.scss */
+/* line 127, ../css/input/_base.scss */
 footer div ul li .carre:hover {
   background-color: #021756;
   color: black;
@@ -155,63 +155,63 @@ footer div ul li .carre:hover {
   transition: all 500ms ease;
 }
 
-/* line 132, ../css/input/_base.scss */
+/* line 133, ../css/input/_base.scss */
 footer div ul li .carre i {
   color: white;
 }
 
-/* line 134, ../css/input/_base.scss */
+/* line 135, ../css/input/_base.scss */
 footer div ul li .carre i:hover {
   color: black;
 }
 
-/* line 141, ../css/input/_base.scss */
+/* line 142, ../css/input/_base.scss */
 footer div ul:first-child li {
   margin-right: 1rem;
   padding-right: 1rem;
   border-right: 1px solid #021756;
 }
 
-/* line 146, ../css/input/_base.scss */
+/* line 147, ../css/input/_base.scss */
 footer div ul:nth-child(2) {
   text-align: center;
 }
 
 /** STYLE TABLETTE **/
 @media (max-width: 1024px) {
-  /* line 158, ../css/input/_base.scss */
+  /* line 159, ../css/input/_base.scss */
   header div .logo {
     width: 9rem;
     height: 6.3rem;
   }
-  /* line 162, ../css/input/_base.scss */
+  /* line 163, ../css/input/_base.scss */
   header div .profil {
     font-size: 1rem;
   }
-  /* line 166, ../css/input/_base.scss */
+  /* line 167, ../css/input/_base.scss */
   header div a i {
     font-size: 1.7rem;
   }
-  /* line 170, ../css/input/_base.scss */
+  /* line 171, ../css/input/_base.scss */
   header div .connexion {
     padding: .4rem .9rem;
     font-size: 1rem;
   }
-  /* line 174, ../css/input/_base.scss */
+  /* line 175, ../css/input/_base.scss */
   header div div {
     margin-right: 15rem;
   }
-  /* line 178, ../css/input/_base.scss */
+  /* line 179, ../css/input/_base.scss */
   header nav {
     text-align: right;
     margin-right: 4rem;
     padding: 0.3rem 0 0 0;
   }
-  /* line 182, ../css/input/_base.scss */
+  /* line 183, ../css/input/_base.scss */
   header nav ul li a {
     font-size: 1rem;
   }
-  /* line 191, ../css/input/_base.scss */
+  /* line 192, ../css/input/_base.scss */
   footer div ul:first-child li {
     display: block;
     border: none;
@@ -220,46 +220,46 @@ footer div ul:nth-child(2) {
 
 /** STYLE SMARTPHONE **/
 @media (hover: none), (max-width: 840px) {
-  /* line 204, ../css/input/_base.scss */
+  /* line 205, ../css/input/_base.scss */
   header div p {
     margin-left: -5rem;
   }
-  /* line 207, ../css/input/_base.scss */
+  /* line 208, ../css/input/_base.scss */
   header div p span img {
     width: 20px;
     height: 14px;
   }
-  /* line 213, ../css/input/_base.scss */
+  /* line 214, ../css/input/_base.scss */
   header div div {
     margin-right: 3rem;
   }
-  /* line 215, ../css/input/_base.scss */
+  /* line 216, ../css/input/_base.scss */
   header div div .profil {
     display: none;
   }
-  /* line 220, ../css/input/_base.scss */
+  /* line 221, ../css/input/_base.scss */
   header nav {
     /* Bloc menu burger */
   }
-  /* line 222, ../css/input/_base.scss */
+  /* line 223, ../css/input/_base.scss */
   header nav input:checked + label > span {
     transform: rotate(45deg);
   }
-  /* line 224, ../css/input/_base.scss */
+  /* line 225, ../css/input/_base.scss */
   header nav input:checked + label > span::before {
     top: 0;
     transform: rotate(0deg);
   }
-  /* line 228, ../css/input/_base.scss */
+  /* line 229, ../css/input/_base.scss */
   header nav input:checked + label > span::after {
     top: 0;
     transform: rotate(90deg);
   }
-  /* line 233, ../css/input/_base.scss */
+  /* line 234, ../css/input/_base.scss */
   header nav input:checked ~ ul {
     right: 0 !important;
   }
-  /* line 238, ../css/input/_base.scss */
+  /* line 239, ../css/input/_base.scss */
   header nav label {
     position: fixed;
     top: 20px;
@@ -269,7 +269,7 @@ footer div ul:nth-child(2) {
     cursor: pointer;
     z-index: 1;
   }
-  /* line 246, ../css/input/_base.scss */
+  /* line 247, ../css/input/_base.scss */
   header nav label > span, header nav label ::before, header nav label ::after {
     display: block;
     position: absolute;
@@ -278,17 +278,17 @@ footer div ul:nth-child(2) {
     background-color: #616161;
     transition-duration: .25s;
   }
-  /* line 254, ../css/input/_base.scss */
+  /* line 255, ../css/input/_base.scss */
   header nav label > span::before {
     content: '';
     top: -8px;
   }
-  /* line 258, ../css/input/_base.scss */
+  /* line 259, ../css/input/_base.scss */
   header nav label > span::after {
     content: '';
     top: 8px;
   }
-  /* line 264, ../css/input/_base.scss */
+  /* line 265, ../css/input/_base.scss */
   header nav ul {
     opacity: 0.95;
     display: flex;
@@ -307,7 +307,7 @@ footer div ul:nth-child(2) {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     transition-duration: .25s;
   }
-  /* line 282, ../css/input/_base.scss */
+  /* line 283, ../css/input/_base.scss */
   header nav ul li a {
     display: block;
     color: #333;
@@ -315,7 +315,7 @@ footer div ul:nth-child(2) {
     font-weight: 600;
     transition-duration: .25s;
   }
-  /* line 290, ../css/input/_base.scss */
+  /* line 291, ../css/input/_base.scss */
   header nav ul li .connexion {
     position: static;
     background-color: inherit;
@@ -325,29 +325,141 @@ footer div ul:nth-child(2) {
     text-transform: uppercase;
     -webkit-transition: .5s;
   }
-  /* line 298, ../css/input/_base.scss */
+  /* line 299, ../css/input/_base.scss */
   header nav ul li .connexion:hover {
     /* Pour supprimer l'animation qui a été sur le button connexion */
     background: inherit;
     color: #021756;
   }
-  /* line 309, ../css/input/_base.scss */
+  /* line 310, ../css/input/_base.scss */
   footer {
     font-size: .8rem;
   }
-  /* line 311, ../css/input/_base.scss */
+  /* line 312, ../css/input/_base.scss */
   footer > ul {
     margin-right: 2rem;
     margin-left: 1rem;
   }
-  /* line 315, ../css/input/_base.scss */
+  /* line 316, ../css/input/_base.scss */
   footer div {
     width: 50%;
   }
-  /* line 317, ../css/input/_base.scss */
+  /* line 318, ../css/input/_base.scss */
   footer div ul:last-child {
     display: none;
   }
+}
+
+/* line 2, ../css/input/styleIndex.scss */
+section {
+  margin-bottom: 5rem;
+}
+
+/* line 4, ../css/input/styleIndex.scss */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #021756;
+  font-family: "Roboto", Arial, sans-serif, serif;
+}
+
+/* line 10, ../css/input/styleIndex.scss */
+section .wrapper {
+  margin: 5em 0;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+/* line 15, ../css/input/styleIndex.scss */
+section .wrapper .card {
+  width: 200px;
+  height: 200px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 29, ../css/input/styleIndex.scss */
+section .wrapper .card:hover:before {
+  opacity: 1;
+}
+
+/* line 32, ../css/input/styleIndex.scss */
+section .wrapper .card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* line 36, ../css/input/styleIndex.scss */
+section .wrapper .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+/* line 50, ../css/input/styleIndex.scss */
+section .wrapper .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 60, ../css/input/styleIndex.scss */
+section .wrapper .card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+/* line 67, ../css/input/styleIndex.scss */
+section .wrapper .card .info h1 {
+  margin: 0px;
+}
+
+/* line 70, ../css/input/styleIndex.scss */
+section .wrapper .card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+/* line 75, ../css/input/styleIndex.scss */
+section .wrapper .card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+/* line 85, ../css/input/styleIndex.scss */
+section .wrapper .card .info button:hover {
+  background: dodgerblue;
+  color: white;
 }
 
 /*# sourceMappingURL=styleIndex.css.map */
