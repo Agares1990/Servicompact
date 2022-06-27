@@ -1,7 +1,7 @@
 <?php
   require "include/init_twig.php";
   $css = "styleIndex";
-  $script = "script";
+  $script = "index";
   $title = "SERVICOMPACT: Nettoyage, Désinfection et Traitement Nuisibles";
 
   echo $twig->render('index.html.twig',

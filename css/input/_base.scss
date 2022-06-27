@@ -80,13 +80,18 @@ header{
 header.scroll{
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
-  padding: .5rem 1rem 0 1rem;
-  .logo{
-    width: 9rem;
-    height: 6.3rem;
+  // padding: .5rem 1rem 0 1rem;
+  >a{
+    img{
+      width: 8.5rem;
+      height: 6.8rem;
+    }
   }
   nav{
-    padding: 0.3rem 0 0 0;
+    padding: 0.3rem 0;
+    ul{
+      margin: 4rem 3rem 0 0;
+    }
   }
 }
 
