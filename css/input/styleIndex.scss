@@ -1,4 +1,8 @@
 @import"base";
+@font-face {
+    font-family: 'avenir-lt-std-85-heavy';
+    src: url('../../font/avenir-lt-std-85-heavy.otf');
+}
 section{
   //margin-bottom: 5rem;
   h2{
@@ -70,7 +74,7 @@ section{
         h3 {
         margin-bottom: 1rem;
         font-size: 1.4em;
-        font-weight:bold;
+        font-family: 'avenir-lt-std-85-heavy';
         }
         p {
         letter-spacing: 1px;
@@ -112,17 +116,58 @@ section{
 
 /* Section nos lieux d'Interventions */
 
-.image{
-  background-color: #22313F; /* Pour que vous voyiez bien mon image*/
-  overflow:hidden;/*On empeche l'image de dépasser du bloc*/
-  display:block;
-  width: 320px;
-  height: 240px;
-  margin:auto; /* on centre le bloc*/
-  img{
-    transition:0.5s;/* durée de l'animation en secondes*/
-    &:hover{
-      transform : scale(1.2);/* Zoom de l'image. La taille normale est 1 */
+div.block{
+  div{
+    background-color: #22313F; /* Pour que vous voyiez bien mon image*/
+    overflow:hidden;/*On empeche l'image de dépasser du bloc*/
+    display:block;
+    width: 320px;
+    height: 240px;
+    margin:auto; /* on centre le bloc*/
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+    img{
+      transition:0.5s;/* durée de l'animation en secondes*/
+      &:hover{
+        transform : scale(1.2);/* Zoom de l'image. La taille normale est 1 */
+      }
+    }
+    margin-bottom: 2em;
+  }
+  h3{
+    margin-left: 2em;
+    font-family: 'avenir-lt-std-85-heavy';
+    font-size: 1.3em;
+  }
+}
+
+#keyFigures{
+  #container{
+    display: flex;
+    max-width:800px;
+    margin: 0 auto ;
+    text-align: center;
+    justify-content: space-around;
+    // background-color: #F46A6A;
+    .content{
+      //float: left;
+      color:#fff;
+      //justify-content: space-around;
+      //justify-content:center;
+      margin: 2rem 0;
+      padding: 2rem 0;
+
+      //font-weight: bold;
+      background-color: rgba(2,23,86,0.65);
+      //opacity: 0.65;
+      width:7.5rem;
+      border-radius: 50%;
+      height:3.75rem;
+      .counter{
+        font-size:1.8em;
+      }
+      h4{
+        font-size: 1.2em;
+      }
     }
   }
 }

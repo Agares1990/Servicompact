@@ -354,12 +354,17 @@ footer div ul:nth-child(2) {
   }
 }
 
-/* line 2, ../css/input/styleIndex.scss */
+@font-face {
+  font-family: 'avenir-lt-std-85-heavy';
+  src: url("../../font/avenir-lt-std-85-heavy.otf");
+}
+
+/* line 6, ../css/input/styleIndex.scss */
 section {
   /* Section nos préstations */
 }
 
-/* line 4, ../css/input/styleIndex.scss */
+/* line 8, ../css/input/styleIndex.scss */
 section h2 {
   text-align: center;
   font-size: 2rem;
@@ -369,7 +374,7 @@ section h2 {
   font-family: "Roboto", Arial, sans-serif, serif;
 }
 
-/* line 13, ../css/input/styleIndex.scss */
+/* line 17, ../css/input/styleIndex.scss */
 section .wrapper {
   margin: 5em auto 3em auto;
   display: flex;
@@ -377,7 +382,7 @@ section .wrapper {
   justify-content: space-around;
 }
 
-/* line 18, ../css/input/styleIndex.scss */
+/* line 22, ../css/input/styleIndex.scss */
 section .wrapper .card {
   width: 22.5rem;
   height: 16.5rem;
@@ -390,18 +395,18 @@ section .wrapper .card {
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 32, ../css/input/styleIndex.scss */
+/* line 36, ../css/input/styleIndex.scss */
 section .wrapper .card:hover:before {
   opacity: 1;
 }
 
-/* line 35, ../css/input/styleIndex.scss */
+/* line 39, ../css/input/styleIndex.scss */
 section .wrapper .card:hover .info {
   opacity: 1;
   transform: translateY(0px);
 }
 
-/* line 39, ../css/input/styleIndex.scss */
+/* line 43, ../css/input/styleIndex.scss */
 section .wrapper .card:before {
   content: "";
   position: absolute;
@@ -416,7 +421,7 @@ section .wrapper .card:before {
   opacity: 0;
 }
 
-/* line 53, ../css/input/styleIndex.scss */
+/* line 57, ../css/input/styleIndex.scss */
 section .wrapper .card img {
   width: 100%;
   height: 100%;
@@ -427,7 +432,7 @@ section .wrapper .card img {
   left: 0;
 }
 
-/* line 63, ../css/input/styleIndex.scss */
+/* line 67, ../css/input/styleIndex.scss */
 section .wrapper .card .info {
   position: relative;
   z-index: 3;
@@ -437,21 +442,21 @@ section .wrapper .card .info {
   transition: 0.5s;
 }
 
-/* line 70, ../css/input/styleIndex.scss */
+/* line 74, ../css/input/styleIndex.scss */
 section .wrapper .card .info h3 {
   margin-bottom: 1rem;
   font-size: 1.4em;
-  font-weight: bold;
+  font-family: 'avenir-lt-std-85-heavy';
 }
 
-/* line 75, ../css/input/styleIndex.scss */
+/* line 79, ../css/input/styleIndex.scss */
 section .wrapper .card .info p {
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
 }
 
-/* line 80, ../css/input/styleIndex.scss */
+/* line 84, ../css/input/styleIndex.scss */
 section .wrapper .card .info button {
   padding: 0.6rem;
   outline: none;
@@ -464,33 +469,33 @@ section .wrapper .card .info button {
   transition: 0.4s ease;
 }
 
-/* line 90, ../css/input/styleIndex.scss */
+/* line 94, ../css/input/styleIndex.scss */
 section .wrapper .card .info button:hover {
   background: dodgerblue;
   color: white;
 }
 
 /* Fin section nos préstations */
-/* line 101, ../css/input/styleIndex.scss */
+/* line 105, ../css/input/styleIndex.scss */
 .hr {
   width: 80%;
   margin: 0 auto 5rem auto;
   display: flex;
 }
 
-/* line 105, ../css/input/styleIndex.scss */
+/* line 109, ../css/input/styleIndex.scss */
 .hr hr {
   width: 45%;
 }
 
-/* line 108, ../css/input/styleIndex.scss */
+/* line 112, ../css/input/styleIndex.scss */
 .hr i, .hr hr {
   color: #021756;
 }
 
 /* Section nos lieux d'Interventions */
-/* line 115, ../css/input/styleIndex.scss */
-.image {
+/* line 120, ../css/input/styleIndex.scss */
+div.block div {
   background-color: #22313F;
   /* Pour que vous voyiez bien mon image*/
   overflow: hidden;
@@ -500,18 +505,57 @@ section .wrapper .card .info button:hover {
   height: 240px;
   margin: auto;
   /* on centre le bloc*/
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2em;
 }
 
-/* line 122, ../css/input/styleIndex.scss */
-.image img {
+/* line 128, ../css/input/styleIndex.scss */
+div.block div img {
   transition: 0.5s;
   /* durée de l'animation en secondes*/
 }
 
-/* line 124, ../css/input/styleIndex.scss */
-.image img:hover {
+/* line 130, ../css/input/styleIndex.scss */
+div.block div img:hover {
   transform: scale(1.2);
   /* Zoom de l'image. La taille normale est 1 */
+}
+
+/* line 136, ../css/input/styleIndex.scss */
+div.block h3 {
+  margin-left: 2em;
+  font-family: 'avenir-lt-std-85-heavy';
+  font-size: 1.3em;
+}
+
+/* line 144, ../css/input/styleIndex.scss */
+#keyFigures #container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-around;
+}
+
+/* line 151, ../css/input/styleIndex.scss */
+#keyFigures #container .content {
+  color: #fff;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  background-color: rgba(2, 23, 86, 0.65);
+  width: 7.5rem;
+  border-radius: 50%;
+  height: 3.75rem;
+}
+
+/* line 165, ../css/input/styleIndex.scss */
+#keyFigures #container .content .counter {
+  font-size: 1.8em;
+}
+
+/* line 168, ../css/input/styleIndex.scss */
+#keyFigures #container .content h4 {
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=styleIndex.css.map */
