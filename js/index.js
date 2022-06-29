@@ -9,6 +9,7 @@ $(window).scroll(function() {
 
 });
 
+// Chiffres clés
 $('.counter').each(function() {
   var $this = $(this),
       countTo = $this.attr('data-count');

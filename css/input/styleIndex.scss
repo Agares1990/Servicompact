@@ -135,38 +135,83 @@ div.block{
   }
   h3{
     margin-left: 2em;
-    font-family: 'avenir-lt-std-85-heavy';
-    font-size: 1.3em;
+    @include h3;
   }
 }
 
-#keyFigures{
-  #container{
-    display: flex;
-    max-width:800px;
-    margin: 0 auto ;
-    text-align: center;
-    justify-content: space-around;
-    // background-color: #F46A6A;
-    .content{
-      //float: left;
-      color:#fff;
-      //justify-content: space-around;
-      //justify-content:center;
-      margin: 2rem 0;
-      padding: 2rem 0;
+/* Fin section nos lieux d'Interventions */
 
-      //font-weight: bold;
-      background-color: rgba(2,23,86,0.65);
-      //opacity: 0.65;
-      width:7.5rem;
-      border-radius: 50%;
-      height:3.75rem;
-      .counter{
-        font-size:1.8em;
-      }
-      h4{
-        font-size: 1.2em;
+/* Section Nos valeurs */
+
+#nosValeurs{
+  width: 70%;
+  margin: 5rem auto;
+  h2{
+    margin-bottom: 2rem;
+  }
+  >p{
+    margin-bottom: 2rem;
+  }
+  .divContainer{
+    width: 50%;
+    img{
+      width: 90%;
+      border-bottom: 2px solid $navyBlue;
+      margin-bottom: 1rem;
+    }
+    h3{
+      @include h3;
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+/* Fin section Nos Valeurs */
+
+/* Section nos chiffres clés */
+div#imageBack{
+  //height: 100%;
+  background: rgba(0, 0, 0, 0) url("../../images/imageBack4.jpeg");
+
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 10rem 0 0 0;
+  margin: 5rem 0;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  height: 50vh;
+  min-height: 400px;
+  #keyFigures{
+    //vertical-align: middle;
+    #container{
+      display: flex;
+      max-width:800px;
+      margin: 0 auto ;
+      text-align: center;
+      justify-content: space-around;
+      // background-color: #F46A6A;
+      .content{
+        //float: left;
+        color:#fff;
+        //justify-content: space-around;
+        //justify-content:center;
+        margin: 2rem 0;
+        padding: 2rem 0;
+
+        //font-weight: bold;
+        background-color: rgba(2,23,86,0.75);
+        //opacity: 0.65;
+        width:7.5rem;
+        border-radius: 50%;
+        height:3.75rem;
+        .counter{
+          font-size:1.8em;
+        }
+        h4{
+          font-size: 1.2em;
+        }
       }
     }
   }
