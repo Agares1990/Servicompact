@@ -144,7 +144,7 @@ div.block{
 /* Section Nos valeurs */
 
 #nosValeurs{
-  width: 70%;
+  width: 80%;
   margin: 5rem auto;
   h2{
     margin-bottom: 2rem;
@@ -152,18 +152,29 @@ div.block{
   >p{
     margin-bottom: 2rem;
   }
-  .divContainer{
-    width: 50%;
-    img{
-      width: 90%;
-      border-bottom: 2px solid $navyBlue;
-      margin-bottom: 1rem;
-    }
-    h3{
-      @include h3;
-      margin-bottom: .5rem;
+  #divContainer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    .divContaint{
+      width: 50%;
+
+      img{
+        width: 60%;
+        border-bottom: 2px solid $navyBlue;
+        margin-bottom: 1rem;
+      }
+      h3{
+        @include h3;
+        margin-bottom: .5rem;
+      }
+      p{
+        width: 90%;
+        margin: 0 auto;
+      }
     }
   }
+
 }
 
 /* Fin section Nos Valeurs */

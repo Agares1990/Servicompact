@@ -45,7 +45,7 @@
         <ul>
           <!-- <div id="toggleLeft"><i class="fa-solid fa-chevron-left"></i></div> -->
             <li><a href="index.php">accueil</a></li>
-            <li><a href="prestations.php">préstations</a></li>
+            <li><a href="prestations.php">prestations</a></li>
             <li><a href="nosValeurs.php">nos valeurs</a></li>
             <li><a href="devis.php">demander un devis</a></li>
             <li><a href="contact.php">contactez-nous</a></li>
@@ -60,24 +60,47 @@
   	{% endblock %}
 
       <footer>
-        <ul>
-          <li><a href="mentionLegales.php">{{Mentions}}</a></li>
-          <li><a href="politiqueConfidentialite.php">{{politic}}</a></li>
-        </ul>
-        <div>
-          <ul>
-            <li><span>{{adress}}: </span> Campus Carlone - 06200, Nice</li>
-            <li><span>Mail: </span> info@niceone.com</li>
-            <li><span>Tel: </span> +33 6 00 00 00 00</li>
-          </ul>
-          <ul>
-              <li><a href=""><span class="carre"><i class="fab fa-facebook"></i></span></a></li>
-              <li><a href=""><span class="carre"><i class="fab fa-instagram"></i></span></a></li>
-              <li><a href=""><span class="carre"><i class="fab fa-twitter"></i></span></a></li>
-              <li><a href=""><span class="carre"><i class="fab fa-linkedin-in"></i></span></a></li>
-          </ul>
+        <div id="flexContainer">
+          <div class="divFlex">
+            <h3>Servimaroc S.A.R.L</h3>
+            <p>Servimaroc, votre entreprise de nettoyage présent partout au Maros.
+              Avec une expertise solide en matière de nettoyage industriel, notre structure vous propose des services de nettoyage professionnel sur-mesure.
+              Vous avez un projet ? Sur simple appel téléphonique, échangez avec l’un de nos experts et obtenez un devis nettoyage gratuit et rapide.</p>
+          </div>
+          <div class="divFlex">
+            <h3>Secteurs d'activités</h3>
+            <ul>
+              <li>Nettoyage industriel</li>
+              <li>Nettoyage bureaux</li>
+              <li>Nettoyage copropriétés</li>
+              <li>Nettoyage vitres</li>
+              <li>Entretien espaces verts</li>
+              <li>Gardiennage</li>
+              <li>Brancardage</li>
+              <li>Buandage</li>
+            </ul>
+          </div>
+          <div class="divFlex">
+            <h3>Plan de site</h3>
+            <ul>
+              <li><a href="index.php">accueil</a></li>
+              <li><a href="prestations.php">prestations</a></li>
+              <li><a href="nosValeurs.php">nos valeurs</a></li>
+              <li><a href="devis.php">demander un devis</a></li>
+              <li><a href="contact.php">contactez-nous</a></li>
+            </ul>
+          </div>
         </div>
-
+        <ul id="reseaux">
+            <li><a href=""><span class="carre"><i class="fab fa-facebook"></i></span></a></li>
+            <li><a href=""><span class="carre"><i class="fab fa-twitter"></i></span></a></li>
+            <li><a href=""><span class="carre"><i class="fab fa-linkedin-in"></i></span></a></li>
+        </ul>
+        <ul id="legalNotice">
+          <li>2022 © Réalisation par Servimaroc</li>
+          <li>Mentions légales</li>
+          <li>Politique de confidentialité</li>
+        </ul>
       </footer>
 
       <!-- Jquery -->
