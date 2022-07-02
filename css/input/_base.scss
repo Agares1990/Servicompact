@@ -339,6 +339,7 @@ footer{
   }
 
   footer{
+    clear: both; /* Pour stopper le float s'il existe (par exemple on stoppe le float de la page prestations) */
     font-size: .8rem;
     > ul{
       margin-right: 2rem;

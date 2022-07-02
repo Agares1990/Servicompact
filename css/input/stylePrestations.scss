@@ -1,0 +1,43 @@
+@import"base";
+@font-face {
+    font-family: 'avenir-lt-std-85-heavy';
+    src: url('../../font/avenir-lt-std-85-heavy.otf');
+}
+section{
+  width: 90%;
+  margin: 0 auto;
+  h2{
+    margin-top: 6em;
+    @include h2;
+  }
+  >p{
+    margin: 2rem 0;
+  }
+  article{
+    div:first-child{
+      text-align: center;
+      width: 50%;
+      background-color: #FAFAFA;
+      float: left;
+      img{
+        margin: 4rem auto;
+      }
+    }
+    .description{
+      margin-right: 2rem;
+      h3{
+        @include h3;
+      }
+    }
+  }
+  #gardiennage{
+    clear: both;
+    div:first-child{
+      float: right;
+    }
+
+  }
+}
+hr{
+    clear: both;
+}

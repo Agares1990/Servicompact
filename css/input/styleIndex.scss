@@ -6,12 +6,7 @@
 section{
   //margin-bottom: 5rem;
   h2{
-    text-align: center;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: $navyBlue;
-    font-family: $fontRoboto, serif;
+    @include h2;
   }
   /* Section nos préstations */
   .wrapper {

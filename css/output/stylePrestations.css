@@ -400,13 +400,15 @@ footer #legalNotice li:last-child {
   src: url("../../font/avenir-lt-std-85-heavy.otf");
 }
 
-/* line 6, ../css/input/styleIndex.scss */
+/* line 6, ../css/input/stylePrestations.scss */
 section {
-  /* Section nos préstations */
+  width: 90%;
+  margin: 0 auto;
 }
 
-/* line 8, ../css/input/styleIndex.scss */
+/* line 9, ../css/input/stylePrestations.scss */
 section h2 {
+  margin-top: 6em;
   /* style générale des h2 */
   text-align: center;
   font-size: 2rem;
@@ -416,257 +418,49 @@ section h2 {
   font-family: "Roboto", Arial, sans-serif, serif;
 }
 
-/* line 12, ../css/input/styleIndex.scss */
-section .wrapper {
-  margin: 5em auto 3em auto;
-  display: flex;
-  width: 90%;
-  justify-content: space-around;
-}
-
-/* line 17, ../css/input/styleIndex.scss */
-section .wrapper .card {
-  width: 22.5rem;
-  height: 16.5rem;
-  padding: 1.5rem;
-  background: white;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  transition: 0.4s ease-out;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* line 31, ../css/input/styleIndex.scss */
-section .wrapper .card:hover:before {
-  opacity: 1;
-}
-
-/* line 34, ../css/input/styleIndex.scss */
-section .wrapper .card:hover .info {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-/* line 38, ../css/input/styleIndex.scss */
-section .wrapper .card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-  transition: 0.5s;
-  opacity: 0;
-}
-
-/* line 52, ../css/input/styleIndex.scss */
-section .wrapper .card img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* line 62, ../css/input/styleIndex.scss */
-section .wrapper .card .info {
-  position: relative;
-  z-index: 3;
-  color: white;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.5s;
-}
-
-/* line 69, ../css/input/styleIndex.scss */
-section .wrapper .card .info h3 {
-  margin-bottom: 1rem;
-  font-size: 1.4em;
-  font-family: 'avenir-lt-std-85-heavy';
-}
-
-/* line 74, ../css/input/styleIndex.scss */
-section .wrapper .card .info p {
-  letter-spacing: 1px;
-  font-size: 15px;
-  margin-top: 8px;
-}
-
-/* line 79, ../css/input/styleIndex.scss */
-section .wrapper .card .info button {
-  padding: 0.6rem;
-  outline: none;
-  border: none;
-  border-radius: 3px;
-  background: white;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-
-/* line 89, ../css/input/styleIndex.scss */
-section .wrapper .card .info button:hover {
-  background: dodgerblue;
-  color: white;
-}
-
-/* Fin section nos préstations */
-/* line 100, ../css/input/styleIndex.scss */
-.hr {
-  width: 80%;
-  margin: 0 auto 5rem auto;
-  display: flex;
-}
-
-/* line 104, ../css/input/styleIndex.scss */
-.hr hr {
-  width: 45%;
-}
-
-/* line 107, ../css/input/styleIndex.scss */
-.hr i, .hr hr {
-  color: #021756;
-}
-
-/* Section nos lieux d'Interventions */
-/* line 115, ../css/input/styleIndex.scss */
-div.block div {
-  background-color: #22313F;
-  /* Pour que vous voyiez bien mon image*/
-  overflow: hidden;
-  /*On empeche l'image de dépasser du bloc*/
-  display: block;
-  width: 320px;
-  height: 240px;
-  margin: auto;
-  /* on centre le bloc*/
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
-  margin-bottom: 2em;
-}
-
-/* line 123, ../css/input/styleIndex.scss */
-div.block div img {
-  transition: 0.5s;
-  /* durée de l'animation en secondes*/
-}
-
-/* line 125, ../css/input/styleIndex.scss */
-div.block div img:hover {
-  transform: scale(1.2);
-  /* Zoom de l'image. La taille normale est 1 */
-}
-
-/* line 131, ../css/input/styleIndex.scss */
-div.block h3 {
-  margin-left: 2em;
-  /* style générale des h2 */
-  font-family: 'avenir-lt-std-85-heavy';
-  font-size: 1.3em;
-}
-
-/* Fin section nos lieux d'Interventions */
-/* Section Nos valeurs */
-/* line 141, ../css/input/styleIndex.scss */
-#nosValeurs {
-  width: 80%;
-  margin: 5rem auto;
-}
-
-/* line 144, ../css/input/styleIndex.scss */
-#nosValeurs h2 {
-  margin-bottom: 2rem;
-}
-
-/* line 147, ../css/input/styleIndex.scss */
-#nosValeurs > p {
-  margin-bottom: 2rem;
-}
-
-/* line 150, ../css/input/styleIndex.scss */
-#nosValeurs #divContainer {
-  width: 100%;
-  display: flex;
-  text-align: center;
-}
-
-/* line 154, ../css/input/styleIndex.scss */
-#nosValeurs #divContainer .divContaint {
-  width: 50%;
-}
-
-/* line 157, ../css/input/styleIndex.scss */
-#nosValeurs #divContainer .divContaint img {
-  width: 60%;
-  border-bottom: 2px solid #021756;
-  margin-bottom: 1rem;
-}
-
-/* line 162, ../css/input/styleIndex.scss */
-#nosValeurs #divContainer .divContaint h3 {
-  /* style générale des h2 */
-  font-family: 'avenir-lt-std-85-heavy';
-  font-size: 1.3em;
-  margin-bottom: .5rem;
-}
-
-/* line 166, ../css/input/styleIndex.scss */
-#nosValeurs #divContainer .divContaint p {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* Fin section Nos Valeurs */
-/* Section nos chiffres clés */
-/* line 178, ../css/input/styleIndex.scss */
-div#imageBack {
-  background: rgba(0, 0, 0, 0) url("../../images/imageBack4.jpeg");
-  position: relative;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center bottom;
-  padding: 10rem 0 0 0;
-  margin: 5rem 0;
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-  height: 50vh;
-  min-height: 400px;
-}
-
-/* line 194, ../css/input/styleIndex.scss */
-div#imageBack #keyFigures #container {
-  display: flex;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: space-around;
-}
-
-/* line 201, ../css/input/styleIndex.scss */
-div#imageBack #keyFigures #container .content {
-  color: #fff;
+/* line 13, ../css/input/stylePrestations.scss */
+section > p {
   margin: 2rem 0;
-  padding: 2rem 0;
-  background-color: rgba(2, 23, 86, 0.75);
-  width: 7.5rem;
-  border-radius: 50%;
-  height: 3.75rem;
 }
 
-/* line 215, ../css/input/styleIndex.scss */
-div#imageBack #keyFigures #container .content .counter {
-  font-size: 1.8em;
+/* line 17, ../css/input/stylePrestations.scss */
+section article div:first-child {
+  text-align: center;
+  width: 50%;
+  background-color: #FAFAFA;
+  float: left;
 }
 
-/* line 218, ../css/input/styleIndex.scss */
-div#imageBack #keyFigures #container .content h4 {
-  font-size: 1.2em;
+/* line 22, ../css/input/stylePrestations.scss */
+section article div:first-child img {
+  margin: 4rem auto;
 }
 
-/*# sourceMappingURL=styleIndex.css.map */
+/* line 26, ../css/input/stylePrestations.scss */
+section article .description {
+  margin-right: 2rem;
+}
+
+/* line 28, ../css/input/stylePrestations.scss */
+section article .description h3 {
+  /* style générale des h2 */
+  font-family: 'avenir-lt-std-85-heavy';
+  font-size: 1.3em;
+}
+
+/* line 33, ../css/input/stylePrestations.scss */
+section #gardiennage {
+  clear: both;
+}
+
+/* line 35, ../css/input/stylePrestations.scss */
+section #gardiennage div:first-child {
+  float: right;
+}
+
+/* line 41, ../css/input/stylePrestations.scss */
+hr {
+  clear: both;
+}
+
+/*# sourceMappingURL=stylePrestations.css.map */
