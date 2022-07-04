@@ -72,7 +72,7 @@ header nav ul li a {
 
 /* line 62, ../css/input/_base.scss */
 header nav ul li a:hover {
-  color: #021756;
+  color: #011655;
 }
 
 /* line 65, ../css/input/_base.scss */
@@ -83,7 +83,7 @@ header nav ul li a:before {
   height: 3px;
   width: 0%;
   content: "";
-  background-color: #021756;
+  background-color: #011655;
   transition: all 0.35s ease;
 }
 
@@ -117,7 +117,7 @@ header.scroll nav ul {
 
 /* line 105, ../css/input/_base.scss */
 footer {
-  background-color: #021756;
+  background-color: #011655;
   color: white;
   width: calc(100% - 4rem);
   padding: 2rem;
@@ -180,13 +180,13 @@ footer #reseaux .carre {
   font-size: 1.4rem;
   padding: .1rem 0.4rem;
   margin: 0 2rem 0 0;
-  box-shadow: 0 0 0 3px #021756;
+  box-shadow: 0 0 0 3px #011655;
   transition: all 500ms ease;
 }
 
 /* line 156, ../css/input/_base.scss */
 footer #reseaux .carre:hover {
-  background-color: #021756;
+  background-color: #011655;
   color: black;
   box-shadow: 0 0 0 3px #af9654;
   transition: all 500ms ease;
@@ -372,7 +372,7 @@ footer #legalNotice li:last-child {
   header nav ul li .connexion:hover {
     /* Pour supprimer l'animation qui a été sur le button connexion */
     background: inherit;
-    color: #021756;
+    color: #011655;
   }
   /* line 341, ../css/input/_base.scss */
   footer {
@@ -414,7 +414,7 @@ section h2 {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #021756;
+  color: #011655;
   font-family: "Roboto", Arial, sans-serif, serif;
 }
 
@@ -428,7 +428,6 @@ section article div:first-child {
   text-align: center;
   width: 50%;
   background-color: #FAFAFA;
-  float: left;
 }
 
 /* line 22, ../css/input/stylePrestations.scss */
@@ -437,28 +436,89 @@ section article div:first-child img {
 }
 
 /* line 26, ../css/input/stylePrestations.scss */
-section article .description {
-  margin-right: 2rem;
-}
-
-/* line 28, ../css/input/stylePrestations.scss */
-section article .description h3 {
+section article h3 {
   /* style générale des h2 */
   font-family: 'avenir-lt-std-85-heavy';
   font-size: 1.3em;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
 }
 
-/* line 33, ../css/input/stylePrestations.scss */
+/* line 32, ../css/input/stylePrestations.scss */
+section article h3::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #011655;
+  width: 50%;
+  top: 2.7em;
+  left: 0;
+}
+
+/* line 41, ../css/input/stylePrestations.scss */
+section article .description {
+  padding-left: 2rem;
+}
+
+/* line 43, ../css/input/stylePrestations.scss */
+section article .description p {
+  line-height: 150%;
+  margin-bottom: 1rem;
+}
+
+/* line 49, ../css/input/stylePrestations.scss */
+section #nettoyage {
+  /* Article nettoyage */
+}
+
+/* line 50, ../css/input/stylePrestations.scss */
+section #nettoyage div:first-child {
+  float: left;
+  margin-right: 2rem;
+}
+
+/* line 55, ../css/input/stylePrestations.scss */
 section #gardiennage {
   clear: both;
 }
 
-/* line 35, ../css/input/stylePrestations.scss */
+/* line 57, ../css/input/stylePrestations.scss */
 section #gardiennage div:first-child {
   float: right;
+  margin-left: 2rem;
 }
 
-/* line 41, ../css/input/stylePrestations.scss */
+/* line 62, ../css/input/stylePrestations.scss */
+section #brancardage {
+  /* Article nettoyage */
+  clear: both;
+}
+
+/* line 64, ../css/input/stylePrestations.scss */
+section #brancardage div:first-child {
+  float: left;
+  margin-right: 2rem;
+}
+
+/* line 69, ../css/input/stylePrestations.scss */
+section #othersActivities {
+  clear: both;
+  text-align: center;
+}
+
+/* line 72, ../css/input/stylePrestations.scss */
+section #othersActivities ul {
+  font-size: 1.1rem;
+  line-height: 200%;
+}
+
+/* line 75, ../css/input/stylePrestations.scss */
+section #othersActivities ul li {
+  list-style: disc;
+}
+
+/* line 81, ../css/input/stylePrestations.scss */
 hr {
   clear: both;
 }

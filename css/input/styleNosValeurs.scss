@@ -1,0 +1,31 @@
+@import"base";
+@font-face {
+    font-family: 'avenir-lt-std-85-heavy';
+    src: url('../../font/avenir-lt-std-85-heavy.otf');
+}
+
+#banderole{
+  margin-top: 10rem;
+  div#imageBack{
+    //height: 100%;
+    background: rgba(0, 0, 0, 0) url("../../images/closeup.jpg");
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 10rem 0 0 0;
+    margin: 5rem 0;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    height: 50vh;
+    //min-height: 400px;
+    h1{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-family: 'avenir-lt-std-85-heavy';
+      color: white;
+    }
+  }
+}

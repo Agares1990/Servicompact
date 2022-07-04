@@ -18,24 +18,64 @@ section{
       text-align: center;
       width: 50%;
       background-color: #FAFAFA;
-      float: left;
+      //float: left;
       img{
         margin: 4rem auto;
       }
     }
-    .description{
-      margin-right: 2rem;
-      h3{
-        @include h3;
+    h3{
+      @include h3;
+      padding-top: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+      &::after{
+        content: '';
+        position: absolute;
+        border: 2px solid $navyBlue;
+        width: 50%;
+        top: 2.7em;
+        left: 0;
       }
+    }
+    .description{
+      padding-left: 2rem;
+      p{
+        line-height: 150%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  #nettoyage{ /* Article nettoyage */
+    div:first-child{
+      float: left;
+      margin-right: 2rem;
     }
   }
   #gardiennage{
     clear: both;
     div:first-child{
       float: right;
+      margin-left: 2rem;
     }
-
+  }
+  #brancardage{ /* Article nettoyage */
+    clear: both;
+    div:first-child{
+      float: left;
+      margin-right: 2rem;
+    }
+  }
+  #othersActivities{
+    clear: both;
+    text-align: center;
+    ul{
+      font-size: 1.1rem;
+      line-height: 200%;
+      li{
+        list-style: disc;
+      }
+    }
   }
 }
 hr{
