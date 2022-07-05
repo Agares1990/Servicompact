@@ -414,18 +414,71 @@ footer #legalNotice li:last-child {
   background-size: cover;
   background-position: center center;
   padding: 10rem 0 0 0;
-  margin: 5rem 0;
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
   height: 50vh;
 }
 
 /* line 23, ../css/input/styleNosValeurs.scss */
 #banderole div#imageBack h1 {
+  margin-top: 4rem;
   text-align: center;
   text-transform: uppercase;
   font-size: 4rem;
   font-family: 'avenir-lt-std-85-heavy';
   color: white;
+}
+
+/* line 33, ../css/input/styleNosValeurs.scss */
+#container {
+  margin: 0 10rem 1.5rem;
+}
+
+/* line 35, ../css/input/styleNosValeurs.scss */
+#container h2 {
+  margin: 4rem 0 3rem 0;
+  text-align: center;
+  /* style générale des h2 */
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #011655;
+  font-family: "Roboto", Arial, sans-serif, serif;
+}
+
+/* line 40, ../css/input/styleNosValeurs.scss */
+#container > p {
+  text-align: center;
+}
+
+/* line 43, ../css/input/styleNosValeurs.scss */
+#container #divFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 46, ../css/input/styleNosValeurs.scss */
+#container #divFlex article {
+  margin-top: 5rem;
+  width: calc(100%/3);
+}
+
+/* line 51, ../css/input/styleNosValeurs.scss */
+#container #divFlex article h3 {
+  /* style générale des h2 */
+  font-family: 'avenir-lt-std-85-heavy';
+  font-size: 1.3em;
+  margin-bottom: .5rem;
+}
+
+/* line 54, ../css/input/styleNosValeurs.scss */
+#container #divFlex article h3 img {
+  margin-right: 1.5rem;
+}
+
+/* line 58, ../css/input/styleNosValeurs.scss */
+#container #divFlex article p {
+  margin-left: 3rem;
 }
 
 /*# sourceMappingURL=styleNosValeurs.css.map */

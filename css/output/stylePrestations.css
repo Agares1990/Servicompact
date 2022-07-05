@@ -480,6 +480,7 @@ section #nettoyage div:first-child {
 
 /* line 55, ../css/input/stylePrestations.scss */
 section #gardiennage {
+  /* Article gardiennage */
   clear: both;
 }
 
@@ -491,7 +492,7 @@ section #gardiennage div:first-child {
 
 /* line 62, ../css/input/stylePrestations.scss */
 section #brancardage {
-  /* Article nettoyage */
+  /* Article brancardage */
   clear: both;
 }
 
