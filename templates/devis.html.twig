@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+{% block contenu %}
+<section>
+  <h1>Obtenir un devis gratuitement</h1>
+  <p>Obtenez votre devis gratuit sans engagement en moins de 48 heures.</p>
+  <p>Envoyez-nous votre demande et un de nos commerciaux vous apportera une réponse adaptée à vos besoins.</p>
+  <form class="" action="" method="post">
+    <input type="text" name="companyName" value="" placeholder="Raison Sociale *">
+    <input type="text" name="ContactPerson" value="" placeholder="Personne à contacter *">
+    <input type="email" name="email" value="" placeholder="Adresse mail *">
+    <input type="tel" name="tel" value="" placeholder="Téléphone *">
+    <input type="text" name="town" value="" placeholder="Ville *">
+    <select name="service">
+       <option value="">--Service souhaité *--</option>
+       <option class="option" value="1">Nettoyage</option>
+       <option class="option" value="2">Gardiennage</option>
+       <option class="option" value="3">Buandage</option>
+       <option class="option" value="4">Brancardage</option>
+     </select>
+    <select name="nettoyage">
+       <option value="">--Nettoyage *--</option>
+       <option class="option" value="1">Nettoyage journalière</option>
+       <option class="option" value="2">Nuisible et Désinfection</option>
+       <option class="option" value="3">Nettoyage de vitres</option>
+       <option class="option" value="4">Nettoyage de fin de chantier</option>
+       <option class="option" value="5">Nettoyage après sinistre</option>
+       <option class="option" value="6">Nettoyage événementiel</option>
+       <option class="option" value="7">Nettoyage d'immeubles et parties communes</option>
+     </select>
+     <input type="text" name="surface" value="" placeholder="Surface des locaux concernés (en m2) *">
+     <select name="frequency">
+        <option value="">-- Fréquence des interventions *--</option>
+        <option class="option" value="1">Une seul fois</option>
+        <option class="option" value="2">Chaque jour</option>
+        <option class="option" value="3">Chaque semaine</option>
+        <option class="option" value="4">Une semaine sur deux</option>
+        <option class="option" value="4">Une fois par mois</option>
+        <option class="option" value="4">Autre</option>
+      </select>
+      <textarea name="message" placeholder=" Description détaillée *" rows="8" cols="40"></textarea>
+  </form>
+</section>
+{% endblock %}
