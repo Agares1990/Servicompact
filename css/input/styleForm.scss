@@ -1,0 +1,69 @@
+@import"base";
+@font-face {
+    font-family: 'avenir-lt-std-85-heavy';
+    src: url('../../font/avenir-lt-std-85-heavy.otf');
+}
+section{
+  margin: 15rem auto;
+  width: 50%;
+
+  h1{
+    @include h2;
+    margin-bottom: 3rem;
+  }
+  p{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  form{
+    text-align: center;
+    input, select{
+      display: inline-block;
+      width: 340px;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 30px;
+      border: 1px solid #3F3E3E;
+      font-size: 100%;
+      box-sizing: border-box; /* Pour que les élément de type input et select aient la même dimension */
+      background-color: white;
+    }
+    textarea{
+      width: 90%;
+      border: 1px solid #3F3E3E;
+    }
+    p{
+      margin-left: 2.2rem;
+      font-size: 80%;
+      color:#999;
+      text-align: left;
+    }
+    input[type="checkbox"]{
+      width:auto;
+      margin: 0;
+    }
+    span{
+      text-align: left;
+    }
+    input[type="submit"]{
+     background-image: linear-gradient(to right, #1e3c72 0%, #2a5298  51%, #1e3c72  100%);
+     width: auto;
+     padding: 13px 75px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+     margin: 2rem auto;
+     cursor: pointer;
+     &:hover {
+       background-position: right center; /* change the direction of the change here */
+       color: #fff;
+       text-decoration: none;
+       }
+     }
+    }
+}

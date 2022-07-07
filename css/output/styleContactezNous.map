@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "styleDevis.css",
+	"file": "styleContactezNous.css",
 	"sources": [
-		"../input/styleDevis.scss",
+		"../input/styleContactezNous.scss",
 		"../input/styleForm.scss",
 		"../input/_base.scss",
 		"../input/_valeurs-globales.scss",

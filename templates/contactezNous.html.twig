@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+{% block contenu %}
+<section>
+  <h1>Contactez-nous</h1>
+  <form class="" action="" method="post">
+    <input type="text" name="name" value="" placeholder="Votre nom *">
+    <input type="email" name="email" value="" placeholder="Adresse mail *">
+    <input type="tel" name="tel" value="" placeholder="Téléphone ">
+    <input type="text" name="subject" value="" placeholder="Sujet *">
+    <textarea name="message" placeholder=" Votre message *" rows="13" ></textarea>
+    <p>Veuillez remplir tous les champs marqués d'un astérisque (*) : ces champs sont obligatoires.</p>
+    <input type="checkbox" name="RGPD" value="En cochant cette case, vous acceptez que les données renseignées dans ce formulaire soient utilisés dans le but de vous proposer des informations et offres commerciales. Ces données sont réservées à l'usage exclusif de servimaroc.ma et ne seront en aucun cas communiquées à des tiers. Vous pouvez nous demander à tout moment à servicompact@gmail.com l'accès ou la suppression de vos données personnelles. Pour plus d'informations, nous vous invitons à consulter nos mentions légales.">
+    <span>En cochant cette case, vous acceptez que les données renseignées dans ce formulaire soient utilisés dans le but de vous proposer des informations et offres commerciales. Ces données sont réservées à l'usage exclusif de servimaroc.ma et ne seront en aucun cas communiquées à des tiers. Vous pouvez nous demander à tout moment à servicompact@gmail.com l'accès ou la suppression de vos données personnelles. Pour plus d'informations, nous vous invitons à consulter nos mentions légales.</span>
+  <input type="submit" name="submit" value="Envoyer">
+  </form>
+</section>
+{% endblock %}

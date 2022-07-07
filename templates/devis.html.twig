@@ -5,7 +5,7 @@
   <p>Obtenez votre devis gratuit sans engagement en moins de 48 heures.</p>
   <p>Envoyez-nous votre demande et un de nos commerciaux vous apportera une réponse adaptée à vos besoins.</p>
   <form class="" action="" method="post">
-    <input type="text" name="companyName" value="" placeholder="Raison Sociale *">
+    <input type="text" name="companyName" value="" placeholder="Raison Sociale">
     <input type="text" name="ContactPerson" value="" placeholder="Personne à contacter *">
     <input type="email" name="email" value="" placeholder="Adresse mail *">
     <input type="tel" name="tel" value="" placeholder="Téléphone *">
@@ -37,7 +37,12 @@
         <option class="option" value="4">Une fois par mois</option>
         <option class="option" value="4">Autre</option>
       </select>
-      <textarea name="message" placeholder=" Description détaillée *" rows="8" cols="40"></textarea>
+      <textarea name="message" placeholder=" Description détaillée *" rows="13" ></textarea>
+      <p>Veuillez remplir tous les champs marqués d'un astérisque (*) : ces champs sont obligatoires.</p>
+      <input type="checkbox" name="RGPD" value="En cochant cette case, vous acceptez que les données renseignées dans ce formulaire soient utilisés dans le but de vous proposer des informations et offres commerciales. Ces données sont réservées à l'usage exclusif de servimaroc.ma et ne seront en aucun cas communiquées à des tiers. Vous pouvez nous demander à tout moment à servicompact@gmail.com l'accès ou la suppression de vos données personnelles. Pour plus d'informations, nous vous invitons à consulter nos mentions légales.">
+      <span>En cochant cette case, vous acceptez que les données renseignées dans ce formulaire soient utilisés dans le but de vous proposer des informations et offres commerciales. Ces données sont réservées à l'usage exclusif de servimaroc.ma et ne seront en aucun cas communiquées à des tiers. Vous pouvez nous demander à tout moment à servicompact@gmail.com l'accès ou la suppression de vos données personnelles. Pour plus d'informations, nous vous invitons à consulter nos mentions légales.</span>
+    <input type="submit" name="submit" value="Envoyer">
   </form>
+
 </section>
 {% endblock %}
