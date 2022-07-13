@@ -4,21 +4,36 @@
   <h1>Obtenir un devis gratuitement</h1>
   <p>Obtenez votre devis gratuit sans engagement en moins de 48 heures.</p>
   <p>Envoyez-nous votre demande et un de nos commerciaux vous apportera une réponse adaptée à vos besoins.</p>
-  <form class="" action="" method="post">
+  <p>{{errorMsg}}</p>
+  <form>
+    <div id="success">
+       <span id="successMessage"></span>
+       <i id="closebtn">x</i>
+    </div>
     <input type="text" name="companyName" value="" placeholder="Raison Sociale">
-    <input type="text" name="ContactPerson" value="" placeholder="Personne à contacter *">
+    <input type="text" name="contactPerson" value="" placeholder="Personne à contacter *">
+    <span id="errorContactPerson"></span>
+
     <input type="email" name="email" value="" placeholder="Adresse mail *">
+    <span id="errorMail"></span>
+
     <input type="tel" name="tel" value="" placeholder="Téléphone *">
+    <span id="errorTel"></span>
+
     <input type="text" name="town" value="" placeholder="Ville *">
-    <select name="service">
-       <option value="">--Service souhaité *--</option>
+    <span id="errorTown"></span>
+
+    <select name="service" id="service">
+       <option value="" disabled selected>--Service souhaité *--</option>
        <option class="option" value="1">Nettoyage</option>
        <option class="option" value="2">Gardiennage</option>
        <option class="option" value="3">Buandage</option>
        <option class="option" value="4">Brancardage</option>
      </select>
+     <span id="errorService"></span>
+
     <select name="nettoyage">
-       <option value="">--Nettoyage *--</option>
+       <option value="" disabled selected>--Nettoyage *--</option>
        <option class="option" value="1">Nettoyage journalière</option>
        <option class="option" value="2">Nuisible et Désinfection</option>
        <option class="option" value="3">Nettoyage de vitres</option>
@@ -27,9 +42,12 @@
        <option class="option" value="6">Nettoyage événementiel</option>
        <option class="option" value="7">Nettoyage d'immeubles et parties communes</option>
      </select>
+
      <input type="text" name="surface" value="" placeholder="Surface des locaux concernés (en m2) *">
-     <select name="frequency">
-        <option value="">-- Fréquence des interventions *--</option>
+     <span id="errorSurface"></span>
+
+     <select name="frequency" id="frequency">
+        <option value="" disabled selected>-- Fréquence des interventions *--</option>
         <option class="option" value="1">Une seul fois</option>
         <option class="option" value="2">Chaque jour</option>
         <option class="option" value="3">Chaque semaine</option>
@@ -37,7 +55,11 @@
         <option class="option" value="4">Une fois par mois</option>
         <option class="option" value="4">Autre</option>
       </select>
-      <textarea name="message" placeholder=" Description détaillée *" rows="13" ></textarea>
+      <span id="errorFrequency"></span>
+
+      <textarea name="description" placeholder=" Description détaillée *" rows="13" ></textarea>
+      <span id="errorDescription"></span>
+
       <p>Veuillez remplir tous les champs marqués d'un astérisque (*) : ces champs sont obligatoires.</p>
       <input type="checkbox" name="RGPD" value="En cochant cette case, vous acceptez que les données renseignées dans ce formulaire soient utilisés dans le but de vous proposer des informations et offres commerciales. Ces données sont réservées à l'usage exclusif de servimaroc.ma et ne seront en aucun cas communiquées à des tiers. Vous pouvez nous demander à tout moment à servicompact@gmail.com l'accès ou la suppression de vos données personnelles. Pour plus d'informations, nous vous invitons à consulter nos mentions légales.">
       <span>En cochant cette case, vous acceptez que les données renseignées dans ce formulaire soient utilisés dans le but de vous proposer des informations et offres commerciales. Ces données sont réservées à l'usage exclusif de servimaroc.ma et ne seront en aucun cas communiquées à des tiers. Vous pouvez nous demander à tout moment à servicompact@gmail.com l'accès ou la suppression de vos données personnelles. Pour plus d'informations, nous vous invitons à consulter nos mentions légales.</span>
