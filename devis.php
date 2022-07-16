@@ -7,7 +7,6 @@ $script = "devis";
 $title = "Demander un devis gratuitement- Servimaroc";
 
 $pdo = getPDO();
-
 if (isset($_GET['message'])) {// On récupére le message d'erreur en php
     $errorMsg =  "{$_GET['message']}";
 }
@@ -17,5 +16,4 @@ echo $twig->render('devis.html.twig',
             'title' => $title,
             'errorMsg' => @$errorMsg
   				));
-
 ?>

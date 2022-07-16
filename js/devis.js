@@ -6,22 +6,25 @@ $( document ).ready( function ()
 		// Expression régulière du dernier champ (email).
 		const regex2 = /^(([^<>()\[\]\\.,;:\s@"]+( \.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1, 3}\.[0-9]{1, 3}\.[0-9]{1, 3}\.[0-9]{1, 3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		const regex3 = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
-
+		
+		const companyName = $( "input[name = 'companyName']" ).val();
+		const contactPerson = $( "input[name = 'contactPerson']" ).val();
+		const email = $( "input[name = 'email']" ).val();
+		const tel = $( "input[name = 'tel']" ).val();
+		const town = $( "input[name = 'town']" ).val();
+		const service = $( "input[name = 'service']" ).val();
+		const surface = $( "input[name = 'surface']" ).val();
+		const frequency = $( "input[name = 'frequency']" ).val();
+		const description = $( "textarea[name = 'description']" ).val();
 		// si le formulaire est correct, retourne 'true'
 		// sinon affiche le message adéquat
 		console.log("brahim");
 		function checkForm()
 		{
+
+
 			// Vérification des champs formulaires
-		  const companyName = $( "input[name = 'companyName']" ).val();
-		  const contactPerson = $( "input[name = 'contactPerson']" ).val();
-		  const email = $( "input[name = 'email']" ).val();
-		  const tel = $( "input[name = 'tel']" ).val();
-		  const town = $( "input[name = 'town']" ).val();
-		  const service = $( "input[name = 'service']" ).val();
-		  const surface = $( "input[name = 'surface']" ).val();
-		  const frequency = $( "input[name = 'frequency']" ).val();
-		  const description = $( "textarea[name = 'description']" ).val();
+
 
 			if (!regex1.test( contactPerson ) || contactPerson.trim().length == 0)
 			{
@@ -98,17 +101,17 @@ $( document ).ready( function ()
 					$.post( "devis.php",
 						{
 							// Nom
-							companyName: $( "input[name = 'companyName']" ).val(),
-							contactPerson: $( "input[name = 'contactPerson']" ).val(),
-							email: $( "input[name = 'email']" ).val(),
-							tel: $( "input[name = 'tel']" ).val(),
-							town: $( "input[name = 'town']" ).val(),
-							service: $( "textarea[name = 'service']" ).val(),
-							surface: $( "textarea[name = 'surface']" ).val(),
-							frequency: $( "textarea[name = 'frequency']" ).val(),
-							description: $( "textarea[name = 'description']" ).val(),
+							companyName: companyName,
+							contactPerson: contactPerson,
+							email: email,
+							tel: tel,
+							town: town,
+							service: service,
+							surface: surface,
+							frequency: frequency,
+							description: description,
 						// }, function(staut, data) {
-						// 	console.log(staut, data);
+						 	// console.log(staut, data);
 						});
 
 					// On supprime les données du formulaire seulement

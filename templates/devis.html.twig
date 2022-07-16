@@ -4,8 +4,9 @@
   <h1>Obtenir un devis gratuitement</h1>
   <p>Obtenez votre devis gratuit sans engagement en moins de 48 heures.</p>
   <p>Envoyez-nous votre demande et un de nos commerciaux vous apportera une réponse adaptée à vos besoins.</p>
-  <p>{{errorMsg}}</p>
-  <form>
+
+  <form action="checkDevis.php" method="post">
+    <p>{{errorMsg}}</p>
     <div id="success">
        <span id="successMessage"></span>
        <i id="closebtn">x</i>

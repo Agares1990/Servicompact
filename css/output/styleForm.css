@@ -430,6 +430,11 @@ section form {
 }
 
 /* line 20, ../css/input/styleForm.scss */
+section form p {
+  text-align: center;
+}
+
+/* line 23, ../css/input/styleForm.scss */
 section form input, section form select {
   display: inline-block;
   width: 340px;
@@ -443,13 +448,13 @@ section form input, section form select {
   background-color: white;
 }
 
-/* line 31, ../css/input/styleForm.scss */
+/* line 34, ../css/input/styleForm.scss */
 section form textarea {
   width: 90%;
   border: 1px solid #3F3E3E;
 }
 
-/* line 35, ../css/input/styleForm.scss */
+/* line 38, ../css/input/styleForm.scss */
 section form p {
   margin-left: 2.2rem;
   font-size: 80%;
@@ -457,18 +462,18 @@ section form p {
   text-align: left;
 }
 
-/* line 41, ../css/input/styleForm.scss */
+/* line 44, ../css/input/styleForm.scss */
 section form input[type="checkbox"] {
   width: auto;
   margin: 0;
 }
 
-/* line 45, ../css/input/styleForm.scss */
+/* line 48, ../css/input/styleForm.scss */
 section form span {
   text-align: left;
 }
 
-/* line 48, ../css/input/styleForm.scss */
+/* line 51, ../css/input/styleForm.scss */
 section form input[type="submit"] {
   background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%, #1e3c72 100%);
   width: auto;
@@ -485,7 +490,7 @@ section form input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 62, ../css/input/styleForm.scss */
+/* line 65, ../css/input/styleForm.scss */
 section form input[type="submit"]:hover {
   background-position: right center;
   /* change the direction of the change here */

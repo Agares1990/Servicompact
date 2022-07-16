@@ -2,7 +2,13 @@
 {% block contenu %}
 <section>
   <h1>Contactez-nous</h1>
-  <form class="" action="" method="post">
+  <form>
+    <p>{{errorMsg}}</p>
+    <p id="error"></p>
+    <div id="success">
+       <span id="successMessage"></span>
+       <i id="closebtn">x</i>
+    </div>
     <input type="text" name="name" value="" placeholder="Votre nom *">
     <input type="email" name="email" value="" placeholder="Adresse mail *">
     <input type="tel" name="tel" value="" placeholder="Téléphone ">
