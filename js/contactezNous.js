@@ -80,7 +80,7 @@ $( document ).ready( function ()
 							name: $( "input[name = 'name']" ).val(),
 
 							// Email
-							mail: $( "input[name = 'email']" ).val(),
+							email: $( "input[name = 'email']" ).val(),
 
               // Tel
 							tel: $( "input[name = 'tel']" ).val(),

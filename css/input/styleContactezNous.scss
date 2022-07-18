@@ -1,1 +1,7 @@
 @import"styleForm";
+#success {
+  @include success;
+}
+#closebtn {/** Boutton pour fermer le message de succès **/
+  @include closebtn;
+}

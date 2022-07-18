@@ -5,31 +5,23 @@ require_once "include/_functions.php";
 
 $pdo = getPDO();
 echo "dddddddd";
-if (isset($_POST['submit'])) {
-  // $companyName = htmlspecialchars($_POST['companyName'], ENT_QUOTES);
-  // $contactPerson = htmlspecialchars($_POST['contactPerson'], ENT_QUOTES);
-  // $email = htmlspecialchars($_POST['email'], ENT_QUOTES);
-  // $tel = htmlspecialchars($_POST['tel'], ENT_QUOTES);
-  // $town = htmlspecialchars($_POST['town'], ENT_QUOTES);
-  // $service = htmlspecialchars($_POST['service'], ENT_QUOTES);
-  // $surface = htmlspecialchars($_POST['surface'], ENT_QUOTES);
-  // $frequency = htmlspecialchars($_POST['frequency'], ENT_QUOTES);
-  // $description = htmlspecialchars($_POST['description'], ENT_QUOTES);
-  $companyName = $_POST['companyName'];
-  $contactPerson = $_POST['contactPerson'];
-  $email = $_POST['email'];
-  $tel = $_POST['tel'];
-  $town = $_POST['town'];
-  $service = $_POST['service'];
-  $surface = $_POST['surface'];
-  $frequency = $_POST['frequency'];
-  $description = $_POST['description'];
+if(isset($_POST['submit'])){
+  $companyName = strip_tags($_POST['companyName']);
+  $contactPerson = strip_tags($_POST['contactPerson']);
+  $email = strip_tags($_POST['email']);
+  $tel = strip_tags($_POST['tel']);
+  $town = strip_tags($_POST['town']);
+  $service = strip_tags($_POST['service']);
+  $surface = strip_tags($_POST['surface']);
+  $frequency = strip_tags($_POST['frequency']);
+  $description = strip_tags($_POST['description']);
+  $pattern = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i";
+
 
   if (empty(trim($contactPerson))) {
   $errorMsg = "Le nom de la personne à contacter est laissé vide";
-  }
-  elseif(!domain_exists($email)){
-    $errorMsg = "Adresse mail invalide ou laissé vide";
+  }elseif(!preg_match($pattern, $email)){
+    $errorMsg = "Adresse mail invalide ou laissé vide !!!!!!!";
   }elseif(!(preg_match('/^[0-9]{10}+$/', $tel))){
     $errorMsg = "Numéro de téléphone invalide ou laissé vide";
   }elseif(empty(trim($town))){

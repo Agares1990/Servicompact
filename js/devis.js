@@ -1,12 +1,12 @@
 $( document ).ready( function ()
 	{
 		// Expression régulière des champs (nom/sujet/message).
-		const regex1 = /^[a-zA-Z ]+$/;
+		const regex1 = /^[a-zA-Z ]{2,30}$/;
 
 		// Expression régulière du dernier champ (email).
 		const regex2 = /^(([^<>()\[\]\\.,;:\s@"]+( \.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1, 3}\.[0-9]{1, 3}\.[0-9]{1, 3}\.[0-9]{1, 3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		const regex3 = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
-		
+
 		const companyName = $( "input[name = 'companyName']" ).val();
 		const contactPerson = $( "input[name = 'contactPerson']" ).val();
 		const email = $( "input[name = 'email']" ).val();
@@ -21,7 +21,15 @@ $( document ).ready( function ()
 		console.log("brahim");
 		function checkForm()
 		{
-
+			const companyName = $( "input[name = 'companyName']" ).val();
+			const contactPerson = $( "input[name = 'contactPerson']" ).val();
+			const email = $( "input[name = 'email']" ).val();
+			const tel = $( "input[name = 'tel']" ).val();
+			const town = $( "input[name = 'town']" ).val();
+			const service = $( "input[name = 'service']" ).val();
+			const surface = $( "input[name = 'surface']" ).val();
+			const frequency = $( "input[name = 'frequency']" ).val();
+			const description = $( "textarea[name = 'description']" ).val();
 
 			// Vérification des champs formulaires
 
@@ -98,7 +106,7 @@ $( document ).ready( function ()
 				{
 					// On envoie les données du formulaire via une
 					//	requête de type POST.
-					$.post( "devis.php",
+					$.post( "checkDevis.php",
 						{
 							// Nom
 							companyName: companyName,
@@ -110,8 +118,8 @@ $( document ).ready( function ()
 							surface: surface,
 							frequency: frequency,
 							description: description,
-						// }, function(staut, data) {
-						 	// console.log(staut, data);
+						}, function(staut, data) {
+						 	console.log(staut, data);
 						});
 
 					// On supprime les données du formulaire seulement
