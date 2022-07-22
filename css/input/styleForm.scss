@@ -17,8 +17,16 @@ section{
   }
   form{
     text-align: center;
-    p{
+    #error{
+      width: auto;
       text-align: center;
+      color: red;
+    }
+    #success {
+      @include success;
+    }
+    #closebtn {/** Boutton pour fermer le message de succès **/
+      @include closebtn;
     }
     input, select{
       display: inline-block;

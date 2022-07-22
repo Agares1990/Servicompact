@@ -49,7 +49,7 @@ $( document ).ready( function ()
 			}
 
 			else {
-				$("span").text("")
+				$("#error").text("")
 				$("#success").css("visibility", "visible");
 				$("#successMessage").text("Le message a été envoyé avec succès !!!");
 				return true;

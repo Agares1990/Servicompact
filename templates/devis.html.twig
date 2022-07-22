@@ -12,59 +12,53 @@
        <i id="closebtn">x</i>
     </div>
     <input type="text" name="companyName" value="" placeholder="Raison Sociale">
+
     <input type="text" name="contactPerson" value="" placeholder="Personne à contacter *">
-    <span id="errorContactPerson"></span>
 
     <input type="email" name="email" value="" placeholder="Adresse mail *">
-    <span id="errorMail"></span>
 
     <input type="tel" name="tel" value="" placeholder="Téléphone *">
-    <span id="errorTel"></span>
 
     <input type="text" name="town" value="" placeholder="Ville *">
-    <span id="errorTown"></span>
 
     <select name="service" id="service">
        <option value="" disabled selected>--Service souhaité *--</option>
-       <option class="option" value="1">Nettoyage</option>
-       <option class="option" value="2">Gardiennage</option>
-       <option class="option" value="3">Buandage</option>
-       <option class="option" value="4">Brancardage</option>
+       <option class="option" value="Nettoyage">Nettoyage</option>
+       <option class="option" value="Gardiennage">Gardiennage</option>
+       <option class="option" value="Buandage">Buandage</option>
+       <option class="option" value="Brancardage">Brancardage</option>
      </select>
-     <span id="errorService"></span>
 
-    <select name="nettoyage">
+    <select name="nettoyage" id="nettoyage">
        <option value="" disabled selected>--Nettoyage *--</option>
-       <option class="option" value="1">Nettoyage journalière</option>
-       <option class="option" value="2">Nuisible et Désinfection</option>
-       <option class="option" value="3">Nettoyage de vitres</option>
-       <option class="option" value="4">Nettoyage de fin de chantier</option>
-       <option class="option" value="5">Nettoyage après sinistre</option>
-       <option class="option" value="6">Nettoyage événementiel</option>
-       <option class="option" value="7">Nettoyage d'immeubles et parties communes</option>
+       <option class="option" value="Nettoyage journalière">Nettoyage journalière</option>
+       <option class="option" value="Nuisible et Désinfection">Nuisible et Désinfection</option>
+       <option class="option" value="Nettoyage de vitres">Nettoyage de vitres</option>
+       <option class="option" value="Nettoyage de fin de chantier">Nettoyage de fin de chantier</option>
+       <option class="option" value="Nettoyage après sinistre">Nettoyage après sinistre</option>
+       <option class="option" value="Nettoyage événementiel">Nettoyage événementiel</option>
+       <option class="option" value="Nettoyage d'immeubles et parties communes">Nettoyage d'immeubles et parties communes</option>
      </select>
 
-     <input type="text" name="surface" value="" placeholder="Surface des locaux concernés (en m2) *">
-     <span id="errorSurface"></span>
+     <input type="text" id="surface" name="surface" value="" placeholder="Surface des locaux concernés (en m2) *">
 
      <select name="frequency" id="frequency">
         <option value="" disabled selected>-- Fréquence des interventions *--</option>
-        <option class="option" value="1">Une seul fois</option>
-        <option class="option" value="2">Chaque jour</option>
-        <option class="option" value="3">Chaque semaine</option>
-        <option class="option" value="4">Une semaine sur deux</option>
-        <option class="option" value="4">Une fois par mois</option>
-        <option class="option" value="4">Autre</option>
+        <option class="option" value="Une seul fois">Une seul fois</option>
+        <option class="option" value="Chaque jour">Chaque jour</option>
+        <option class="option" value="Chaque semaine">Chaque semaine</option>
+        <option class="option" value="Une semaine sur deux">Une semaine sur deux</option>
+        <option class="option" value="Une fois par mois">Une fois par mois</option>
+        <option class="option" value="Autre">Autre</option>
       </select>
-      <span id="errorFrequency"></span>
 
       <textarea name="description" placeholder=" Description détaillée *" rows="13" ></textarea>
-      <span id="errorDescription"></span>
 
       <p>Veuillez remplir tous les champs marqués d'un astérisque (*) : ces champs sont obligatoires.</p>
-      <input type="checkbox" name="RGPD" value="En cochant cette case, vous acceptez que les données renseignées dans ce formulaire soient utilisés dans le but de vous proposer des informations et offres commerciales. Ces données sont réservées à l'usage exclusif de servimaroc.ma et ne seront en aucun cas communiquées à des tiers. Vous pouvez nous demander à tout moment à servicompact@gmail.com l'accès ou la suppression de vos données personnelles. Pour plus d'informations, nous vous invitons à consulter nos mentions légales.">
+      <input type="checkbox" name="RGPD" value="">
       <span>En cochant cette case, vous acceptez que les données renseignées dans ce formulaire soient utilisés dans le but de vous proposer des informations et offres commerciales. Ces données sont réservées à l'usage exclusif de servimaroc.ma et ne seront en aucun cas communiquées à des tiers. Vous pouvez nous demander à tout moment à servicompact@gmail.com l'accès ou la suppression de vos données personnelles. Pour plus d'informations, nous vous invitons à consulter nos mentions légales.</span>
     <input type="submit" name="submit" value="Envoyer">
+    <p id="error"></p>
   </form>
 
 </section>

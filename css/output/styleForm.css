@@ -430,11 +430,44 @@ section form {
 }
 
 /* line 20, ../css/input/styleForm.scss */
-section form p {
+section form #error {
+  width: auto;
   text-align: center;
+  color: red;
 }
 
-/* line 23, ../css/input/styleForm.scss */
+/* line 25, ../css/input/styleForm.scss */
+section form #success {
+  position: fixed;
+  top: 50vh;
+  right: calc(50% - 155px);
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  background-color: #4CAF50;
+  visibility: hidden;
+}
+
+/* line 28, ../css/input/styleForm.scss */
+section form #closebtn {
+  /** Boutton pour fermer le message de succès **/
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* line 111, ../css/input/_mixin.scss */
+section form #closebtn:hover {
+  color: black;
+}
+
+/* line 31, ../css/input/styleForm.scss */
 section form input, section form select {
   display: inline-block;
   width: 340px;
@@ -448,13 +481,13 @@ section form input, section form select {
   background-color: white;
 }
 
-/* line 34, ../css/input/styleForm.scss */
+/* line 42, ../css/input/styleForm.scss */
 section form textarea {
   width: 90%;
   border: 1px solid #3F3E3E;
 }
 
-/* line 38, ../css/input/styleForm.scss */
+/* line 46, ../css/input/styleForm.scss */
 section form p {
   margin-left: 2.2rem;
   font-size: 80%;
@@ -462,18 +495,18 @@ section form p {
   text-align: left;
 }
 
-/* line 44, ../css/input/styleForm.scss */
+/* line 52, ../css/input/styleForm.scss */
 section form input[type="checkbox"] {
   width: auto;
   margin: 0;
 }
 
-/* line 48, ../css/input/styleForm.scss */
+/* line 56, ../css/input/styleForm.scss */
 section form span {
   text-align: left;
 }
 
-/* line 51, ../css/input/styleForm.scss */
+/* line 59, ../css/input/styleForm.scss */
 section form input[type="submit"] {
   background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%, #1e3c72 100%);
   width: auto;
@@ -490,7 +523,7 @@ section form input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 65, ../css/input/styleForm.scss */
+/* line 73, ../css/input/styleForm.scss */
 section form input[type="submit"]:hover {
   background-position: right center;
   /* change the direction of the change here */
